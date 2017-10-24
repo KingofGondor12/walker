@@ -19,6 +19,7 @@
 <h2>
   Dog
 </h2>
+
 <p>
   <strong>Name:</strong>
   <%= @client.dog_name %>
@@ -26,7 +27,7 @@
 
 <p>
   <strong>D.O.B:</strong>
-  <%= @client.dog_dob %>
+  <%= @client.dog_dob.to_formatted_s(:long_ordinal) %>
 </p>
 
 <p>
